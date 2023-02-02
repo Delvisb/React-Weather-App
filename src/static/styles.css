@@ -1,0 +1,122 @@
+/* Universial */
+.text1{
+    font-size: 30px;
+    text-align: center;
+    color: white
+}
+.header{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Spinner */
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #383636; 
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+/* Weather.js */
+.weatherComponentContainer{
+    height: 50vh;
+}
+
+.weatherContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.weatherContainer2{
+    width: 350px;
+    height: 280px;
+    background-color: skyblue;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.weatherHeader{
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.weatherText{
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.weatherIconContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+/*  Forecast.js */
+.forecastComponentContainer{
+    height: 60vh;
+    background-color: powderblue;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+}   
+
+.forecastContainer{ 
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.forecast{
+    height: 130px;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.leftContainer{
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+.rightContainer{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.forecastText{
+    text-align: left;
+    margin: 8px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
